@@ -325,3 +325,25 @@ body {
 .services-page section:last-child {
   margin-bottom: 0;
 }
+/* =========================
+   HERO LOGO VARIANTS
+   ========================= */
+
+/* Default (homepage) */
+.hero-logo {
+  height: 240px;
+  width: auto;
+  margin-bottom: 8px;
+}
+
+/* Smaller logo for internal pages */
+.hero-logo--small {
+  height: 140px;
+  margin-bottom: 10px;
+}
+
+/* Tighter hero spacing for internal pages */
+.hero .container.hero-content {
+  padding-top: 3.5rem;
+  padding-bottom: 4rem;
+}
