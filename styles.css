@@ -1,4 +1,7 @@
-/* ---------- Base reset ---------- */
+/* =========================
+   BASE RESET
+   ========================= */
+
 * {
   box-sizing: border-box;
 }
@@ -11,14 +14,20 @@ body {
   background-color: #ffffff;
 }
 
-/* ---------- Layout ---------- */
+/* =========================
+   LAYOUT
+   ========================= */
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 4rem 1.5rem;
+  padding: 2.5rem 1.5rem; /* tightened globally */
 }
 
-/* ---------- Header ---------- */
+/* =========================
+   HEADER (STICKY + COMPACT)
+   ========================= */
+
 .site-header {
   position: sticky;
   top: 0;
@@ -31,14 +40,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0;
+  height: 72px;            /* FIXED header height */
 }
 
+/* Header icon (large without stretching header) */
 .header-icon {
-  height: 40px;
+  height: 64px;
   width: auto;
+  display: block;
 }
 
+/* Navigation */
 .nav a {
   margin-left: 1.5rem;
   text-decoration: none;
@@ -55,14 +67,17 @@ body {
   color: #ffffff !important;
   padding: 0.5rem 1rem;
   border-radius: 6px;
+  text-decoration: none;
 }
 
 .nav-cta:hover {
   background-color: #1e4fd8;
-  text-decoration: none;
 }
 
-/* ---------- Hero ---------- */
+/* =========================
+   HERO
+   ========================= */
+
 .hero {
   background-color: #0a1f44;
   color: #ffffff;
@@ -70,29 +85,40 @@ body {
 }
 
 .hero .container {
-  padding: 6rem 1.5rem;
+  padding: 4.5rem 1.5rem 5rem; /* tighter top & bottom */
 }
 
+/* Hero logo */
 .hero-logo {
-  height: 240px; /* 4× header icon */
-  margin-bottom: 2rem;
+  height: 240px;
+  width: auto;
+  margin-bottom: 12px; /* much closer to text */
 }
 
+/* Hero heading */
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 1.5rem;
+  margin: 0 0 16px;
 }
 
+/* Hero copy */
 .hero p {
   max-width: 720px;
-  margin: 0 auto 1.25rem auto;
+  margin: 0 auto 12px;
   color: #e6ebf5;
+  font-size: 1.125rem;
 }
 
-/* ---------- CTA ---------- */
+/* =========================
+   CTA BUTTON
+   ========================= */
+
+.hero .cta {
+  margin-top: 24px;
+}
+
 .cta a {
   display: inline-block;
-  margin-top: 2rem;
   padding: 0.9rem 2rem;
   background-color: #2563eb;
   color: #ffffff;
@@ -105,21 +131,43 @@ body {
   background-color: #1e4fd8;
 }
 
-/* ---------- Services ---------- */
+/* =========================
+   SERVICES ("WHAT WE DO")
+   ========================= */
+
 .services {
-  background-color: #ffffff;
+  text-align: center;
+  padding-top: 3rem;   /* pulls section upward */
+  padding-bottom: 3.5rem;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #0a1f44;
 }
 
 .services ul {
-  max-width: 720px;
-  margin: 2rem auto 0 auto;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 760px;
 }
 
 .services li {
-  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+  color: #0a1f44;
 }
 
-/* ---------- Contact ---------- */
+.services strong {
+  color: #081833;
+}
+
+/* =========================
+   CONTACT (FUTURE PAGE)
+   ========================= */
+
 .contact ul {
   margin-top: 2rem;
 }
@@ -128,10 +176,13 @@ body {
   margin-bottom: 0.75rem;
 }
 
-/* ---------- Footer ---------- */
+/* =========================
+   FOOTER
+   ========================= */
+
 .footer {
   text-align: center;
-  padding: 3rem 1.5rem;
+  padding: 2.5rem 1.5rem;
   font-size: 0.9rem;
   color: #6b7280;
 }
@@ -139,81 +190,4 @@ body {
 .footer-tagline {
   margin-top: 0.5rem;
   font-weight: 500;
-}
-/* =========================
-   HEADER ICON (3x bigger)
-   ========================= */
-
-.header-icon {
-  height: 84px;              /* was ~28px → 3x bigger */
-  width: auto;
-}
-
-/* Ensure header stays neat despite larger icon */
-.site-header {
-  padding: 20px 0;
-}
-
-/* =========================
-   HERO LOGO (2x bigger + closer)
-   ========================= */
-
-.hero-logo {
-  height: 240px;             /* 2x bigger */
-  width: auto;
-  margin-bottom: 16px;       /* pulls text closer */
-}
-
-/* =========================
-   HERO TEXT TIGHTENING
-   ========================= */
-
-.hero h1 {
-  margin-top: 12px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  margin-bottom: 14px;
-}
-
-/* =========================
-   WHAT WE DO – CENTRED
-   ========================= */
-
-.services {
-  background-color: #ffffff;
-  color: #0a1f44;            /* same royal blue as hero */
-  text-align: center;
-}
-
-.services h2 {
-  color: #0a1f44;
-  text-align: center;
-}
-
-.services ul {
-  list-style-position: inside;
-  padding-left: 0;
-  max-width: 760px;
-  margin: 0 auto;
-}
-
-.services li {
-  color: #0a1f44;
-  font-size: 1.05rem;
-  margin-bottom: 0.9rem;
-}
-
-/* Bold service titles slightly darker */
-.services strong {
-  color: #081833;
-}
-
-/* =========================
-   CTA BUTTON ALIGNMENT
-   ========================= */
-
-.hero .cta {
-  margin-top: 28px;
 }
