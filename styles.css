@@ -55,3 +55,12 @@ p {
 h1 {
   max-width: 10ch;
 }
+body {
+  background-color: #fafafa;
+}
+
+.container {
+  background: #ffffff;
+  padding: 64px 48px;
+  border-radius: 8px;
+}
