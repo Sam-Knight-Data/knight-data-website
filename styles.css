@@ -211,3 +211,28 @@ body {
   padding-top: 4rem;
   padding-bottom: 4.5rem;
 }
+
+/* ---------- Contact page ---------- */
+
+.contact h2 {
+  text-align: center;
+  color: #0a1f44;
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 2rem auto 0 auto;
+}
+
+.contact li {
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  color: #0a1f44;
+}
+
+.contact a {
+  color: #2563eb;
+  font-weight: 500;
+}
