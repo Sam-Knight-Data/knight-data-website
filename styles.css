@@ -265,3 +265,21 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.testimonial {
+  background: #f8fafc;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.testimonial blockquote {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #0a1f44;
+  max-width: 720px;
+  margin: 0 auto 1rem;
+}
+
+.testimonial-author {
+  font-weight: 500;
+  color: #475569;
+}
