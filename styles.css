@@ -93,5 +93,6 @@ a:hover {
 }
 
 .logo {
-  height: 40px;
+  max-width: 220px;
+  margin-bottom: 2rem;
 }
