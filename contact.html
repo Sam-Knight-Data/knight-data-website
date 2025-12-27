@@ -8,7 +8,7 @@
   <meta name="description" content="Contact Knight Data & Automation">
 
   <link rel="icon" href="/favicon.ico">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
 
     <nav class="nav">
       <a href="/index.html">Home</a>
-     <a href="/services.html">Services</a>
+      <a href="/services.html">Services</a>
       <a href="/contact.html" class="nav-cta">Contact</a>
     </nav>
   </div>
@@ -33,7 +33,7 @@
     <img
       src="/assets/logo-white.svg"
       alt="Knight Data & Automation"
-      class="hero-logo hero-logo--small"
+      class="hero-logo"
     >
 
     <h1>Get in touch</h1>
@@ -46,7 +46,6 @@
   </div>
 </section>
 
-
 <section class="container contact-grid">
 
   <!-- Form -->
@@ -56,19 +55,23 @@
     <form action="https://formsubmit.co/Enquiries@knightdata.co.uk" method="POST" class="contact-form">
       <input type="hidden" name="_captcha" value="false">
 
-      <label>Name
+      <label>
+        Name
         <input type="text" name="name" required>
       </label>
 
-      <label>Email
+      <label>
+        Email
         <input type="email" name="email" required>
       </label>
 
-      <label>Company (optional)
+      <label>
+        Company (optional)
         <input type="text" name="company">
       </label>
 
-      <label>How can we help?
+      <label>
+        How can we help?
         <textarea name="message" rows="5" required></textarea>
       </label>
 
@@ -83,23 +86,27 @@
     <ul class="contact-list">
 
       <li>
-        <svg class="contact-icon" viewBox="0 0 24 24">
-          <path d="M2 4h20v16H2z M4 6l8 5 8-5"/>
-        </svg>
-        <a href="mailto:Enquiries@knightdata.co.uk">Enquiries@knightdata.co.uk</a>
+        <span class="icon-circle">
+          ✉️
+        </span>
+        <a href="mailto:Enquiries@knightdata.co.uk">
+          Enquiries@knightdata.co.uk
+        </a>
       </li>
 
       <li>
-        <svg class="contact-icon" viewBox="0 0 24 24">
-          <path d="M6 2h4l2 5-3 2c1.5 3 4 5.5 7 7l2-3 5 2v4c0 1-1 2-2 2C9 21 3 15 3 5c0-1 1-2 2-2z"/>
-        </svg>
-        <a href="tel:+441332505709">+44 1332 505709</a>
+        <span class="icon-circle">
+          📞
+        </span>
+        <a href="tel:+441332505709">
+          +44 1332 505709
+        </a>
       </li>
 
       <li>
-        <svg class="contact-icon" viewBox="0 0 24 24">
-          <path d="M3 4h18v18H3z M7 2v4 M17 2v4"/>
-        </svg>
+        <span class="icon-circle">
+          📅
+        </span>
         <a href="https://outlook.office365.com/owa/calendar/KnightDataAutomation@knightdata.co.uk/bookings/"
            target="_blank" rel="noopener">
           Book time to meet
@@ -114,7 +121,8 @@
 <section class="testimonial">
   <div class="container">
     <blockquote>
-      “Very professional, looked at our process issues. Provided a brilliant and bespoke solution. I would highly recommend Sam!.”
+      “Very professional, looked at our process issues. Provided a brilliant and bespoke solution.
+      I would highly recommend Sam.”
     </blockquote>
     <p class="testimonial-author">
       — Director, Andrews Electrical LTD
@@ -122,11 +130,10 @@
   </div>
 </section>
 
-  
 <footer class="footer">
   <div class="container">
     <p>© 2026 Knight Data & Automation LTD</p>
-    <p class="footer-partner">  Microsoft Partner • Microsoft 365 • Power Platform • Azure</p>
+    <p class="footer-partner">Microsoft Partner • Microsoft 365 • Power Platform • Azure</p>
     <p class="footer-tagline">Predict the future. Become the future.</p>
   </div>
 </footer>
