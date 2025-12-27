@@ -38,6 +38,16 @@ p {
   color: #0057ff;
   text-decoration: none;
 }
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .container {
+    margin-top: 48px;
+  }
+}
 
 .cta a:hover {
   text-decoration: underline;
