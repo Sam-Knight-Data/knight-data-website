@@ -1,5 +1,5 @@
 /* =========================
-   BASE RESET
+   BASE
    ========================= */
 
 * {
@@ -9,9 +9,9 @@
 body {
   margin: 0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
   color: #0f172a;
-  background-color: #ffffff;
+  background: #ffffff;
+  line-height: 1.6;
 }
 
 /* =========================
@@ -21,41 +21,37 @@ body {
 .container {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 2.5rem 1.5rem; /* tightened globally */
+  padding: 2.5rem 1.5rem;
 }
 
 /* =========================
-   HEADER (STICKY + COMPACT)
+   HEADER
    ========================= */
 
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 1000;
   background: #ffffff;
   border-bottom: 1px solid #e5e7eb;
+  z-index: 1000;
 }
 
 .header-inner {
+  height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;            /* FIXED header height */
 }
 
-/* Header icon (large without stretching header) */
 .header-icon {
   height: 64px;
-  width: auto;
-  display: block;
 }
 
-/* Navigation */
 .nav a {
   margin-left: 1.5rem;
   text-decoration: none;
-  font-weight: 500;
   color: #0f172a;
+  font-weight: 500;
 }
 
 .nav a:hover {
@@ -63,15 +59,15 @@ body {
 }
 
 .nav-cta {
-  background-color: #2563eb;
+  background: #2563eb;
   color: #ffffff !important;
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  text-decoration: none;
 }
 
 .nav-cta:hover {
-  background-color: #1e4fd8;
+  background: #1e4fd8;
+  text-decoration: none;
 }
 
 /* =========================
@@ -79,29 +75,25 @@ body {
    ========================= */
 
 .hero {
-  background-color: #0a1f44;
+  background: #0a1f44;
   color: #ffffff;
   text-align: center;
 }
 
 .hero .container {
-  padding: 4.5rem 1.5rem 5rem; /* tighter top & bottom */
+  padding: 4rem 1.5rem 4.5rem;
 }
 
-/* Hero logo */
 .hero-logo {
   height: 240px;
-  width: auto;
-  margin-bottom: 12px; /* much closer to text */
+  margin-bottom: 6px;
 }
 
-/* Hero heading */
 .hero h1 {
   font-size: 3rem;
-  margin: 0 0 16px;
+  margin: 0 0 14px;
 }
 
-/* Hero copy */
 .hero p {
   max-width: 720px;
   margin: 0 auto 12px;
@@ -109,49 +101,46 @@ body {
   font-size: 1.125rem;
 }
 
-/* =========================
-   CTA BUTTON
-   ========================= */
-
-.hero .cta {
+/* CTA */
+.cta {
   margin-top: 24px;
 }
 
 .cta a {
   display: inline-block;
   padding: 0.9rem 2rem;
-  background-color: #2563eb;
+  background: #2563eb;
   color: #ffffff;
-  text-decoration: none;
   border-radius: 6px;
+  text-decoration: none;
   font-weight: 600;
 }
 
 .cta a:hover {
-  background-color: #1e4fd8;
+  background: #1e4fd8;
 }
 
 /* =========================
-   SERVICES ("WHAT WE DO")
+   SERVICES
    ========================= */
 
 .services {
   text-align: center;
-  padding-top: 3rem;   /* pulls section upward */
+  padding-top: 3rem;
   padding-bottom: 3.5rem;
 }
 
 .services h2 {
   font-size: 2rem;
-  margin-bottom: 1.5rem;
   color: #0a1f44;
+  margin-bottom: 1.5rem;
 }
 
 .services ul {
-  list-style-position: inside;
+  list-style: none;
   padding: 0;
-  margin: 0 auto;
   max-width: 760px;
+  margin: 0 auto;
 }
 
 .services li {
@@ -160,20 +149,89 @@ body {
   color: #0a1f44;
 }
 
-.services strong {
-  color: #081833;
-}
-
 /* =========================
-   CONTACT (FUTURE PAGE)
+   CONTACT PAGE
    ========================= */
 
-.contact ul {
-  margin-top: 2rem;
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
 }
 
-.contact li {
-  margin-bottom: 0.75rem;
+.contact-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 2.5rem;
+}
+
+.contact-card h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #0a1f44;
+}
+
+/* Form */
+.contact-form label {
+  display: block;
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-top: 0.4rem;
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #1e4fd8;
+}
+
+/* Contact list with icons */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.contact-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  margin-top: 3px;
+  fill: #2563eb;
+}
+
+.contact-list a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
 }
 
 /* =========================
@@ -191,105 +249,13 @@ body {
   margin-top: 0.5rem;
   font-weight: 500;
 }
+
 /* =========================
-   HERO SPACING TIGHTENING
+   MOBILE
    ========================= */
 
-/* Pull logo closer to heading */
-.hero-logo {
-  margin-bottom: 6px;
-}
-
-/* Remove default top margin on heading */
-.hero h1 {
-  margin-top: 0;
-  margin-bottom: 14px;
-}
-
-/* Slightly tighter hero padding overall */
-.hero .container {
-  padding-top: 4rem;
-  padding-bottom: 4.5rem;
-}
-
-/* ---------- Contact page ---------- */
-
-.contact h2 {
-  text-align: center;
-  color: #0a1f44;
-}
-
-.contact ul {
-  list-style: none;
-  padding: 0;
-  max-width: 600px;
-  margin: 2rem auto 0 auto;
-}
-
-.contact li {
-  margin-bottom: 1.5rem;
-  font-size: 1.05rem;
-  color: #0a1f44;
-}
-
-.contact a {
-  color: #2563eb;
-  font-weight: 500;
-}
-/* ---------- Contact Form ---------- */
-
-.contact {
-  padding: 4rem 1.5rem;
-}
-
-.contact h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #0a1f44;
-}
-
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 1.25rem;
-}
-
-.form-group label {
-  margin-bottom: 0.4rem;
-  font-weight: 500;
-}
-
-.form-group input,
-.form-group textarea {
-  padding: 0.75rem;
-  font-size: 1rem;
-  border-radius: 6px;
-  border: 1px solid #d1d5db;
-  font-family: inherit;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #2563eb;
-}
-
-.btn-primary {
-  display: inline-block;
-  background-color: #2563eb;
-  color: #ffffff;
-  padding: 0.8rem 2rem;
-  border-radius: 6px;
-  border: none;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.btn-primary:hover {
-  background-color: #1e4fd8;
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
 }
