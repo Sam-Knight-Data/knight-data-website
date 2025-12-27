@@ -83,3 +83,8 @@ a:hover {
 .cta a:hover {
   background-color: #163bb0;
 }
+.footer {
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
