@@ -88,3 +88,10 @@ a:hover {
   font-size: 0.9rem;
   color: #6b7280;
 }
+.site-header {
+  padding: 1.5rem 0;
+}
+
+.logo {
+  height: 40px;
+}
