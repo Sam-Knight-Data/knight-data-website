@@ -88,11 +88,16 @@ a:hover {
   font-size: 0.9rem;
   color: #6b7280;
 }
+/* Header & logo */
+
 .site-header {
-  padding: 1.5rem 0;
+  padding: 32px 0;
+  background: transparent;
 }
 
 .logo {
-  max-width: 220px;
-  margin-bottom: 2rem;
+  height: 64px;       /* ← THIS controls logo size */
+  width: auto;
+  display: block;
 }
+
