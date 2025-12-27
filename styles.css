@@ -52,3 +52,6 @@ p {
 .cta a:hover {
   text-decoration: underline;
 }
+h1 {
+  max-width: 10ch;
+}
