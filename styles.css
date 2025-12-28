@@ -363,3 +363,40 @@ body {
   color: #475569;
   font-size: 1rem;
 }
+/* =========================
+   HOW WE WORK – CARDS
+   ========================= */
+
+.centered-heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.principle-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.principle-card {
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 2.25rem;
+}
+
+.principle-card h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.principle-card p {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .principle-cards {
+    grid-template-columns: 1fr;
+  }
+}
